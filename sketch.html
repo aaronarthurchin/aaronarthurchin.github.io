@@ -14,7 +14,7 @@
 		
 		<script src="http://threejsplaygnd.brangerbriz.net/js/three.min.js"></script>
 		<script src="http://threejsplaygnd.brangerbriz.net/js/Detector.js"></script>
-		Aaron Arthur Chin 2018 //threejsplaygnd.brangerbriz.com/s/?id=5593
+		Aaron Arthur Chin 2018
 		<script>
 	
 			if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
@@ -77,6 +77,7 @@
 				
 				particles.rotation.z = Date.now() * 0.0005;
 				
+				camera.lookAt(mesh.position);
 				camera.rotation.z = Math.sin( Date.now() * 0.0001 ) * 10;
 				camera.position.z = Math.sin( Date.now() * 0.001 ) * 500;
 
