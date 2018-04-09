@@ -20,21 +20,88 @@
 		<iframe src="https://aaronarthurchin.github.io/index4.html"></iframe>
 	</div>
 
-<div id="content">
-			<h1 style="font-size:3vw">Portfolio</h1>
-			<p>this is where I'll put all the content</p>
+<div id="Pcontent">
+		<h1 style="font-size:3vw">Portfolio</h1>
+		<h2>Images</h2>
+			<div class="grid-container">
+  				<div class="grid-item">
+  					<a target="_blank" href="portfolio/MEGU WAVE copy_waifu2x_art_noise3_scale_tta_1.png">
+  						<img src="portfolio/MEGU WAVE copy_waifu2x_art_noise3_scale_tta_1.png" alt="MEGU WAVE">
+					</a>
+  				</div>
+  				<div class="grid-item">2</div>
+  				<div class="grid-item">3</div>
+ 				<div class="grid-item">4</div>
+  				<div class="grid-item">5</div>
+  				<div class="grid-item">6</div>
+  				<div class="grid-item">7</div>
+  				<div class="grid-item">8</div>
+  				<div class="grid-item">9</div>
+			</div>
+		<h2>Video</h2>
+			<div class="grid-container">
+  				<div class="grid-item"><iframe width="280" height="158" src="https://www.youtube.com/embed/w9kP6R6BGHY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+  				<div class="grid-item"><iframe width="280" height="158" src="https://www.youtube.com/embed/BU-mNSGr7LU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+  				<div class="grid-item"><iframe width="280" height="158" src="https://www.youtube.com/embed/ysbg3iknBfA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+  				<div class="grid-item"><iframe width="280" height="158" src="https://www.youtube.com/embed/db6-0jBHpW4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+			</div>
+		<h2>Net Art</h2>
+		<a href="https://aaronarthurchin.github.io/index4.html"><img src="portfolio/Nat20.png" alt="Nat20"></a>
+		<a href="https://aaronarthurchin.github.io/index5.html"><img src="portfolio/i love this but don't know what to do.png" alt="If only dating wasn't this complicated"></a>
+		<h2>3D Models</h2>
+			<div class="grid-container">
+  				<div class="grid-item">
+				<div class="w3-content w3-display-container">
+  					<a target="_blank" href="portfolio/Screen Shot 2017-03-07 at 10.51.19 AM.png"><img class="mySlides" src="portfolio/Screen Shot 2017-03-07 at 10.51.19 AM.png" style="width:50%"></a>
+  					<a target="_blank" href="portfolio/Screen Shot 2017-03-07 at 10.51.57 AM.png"><img class="mySlides" src="portfolio/Screen Shot 2017-03-07 at 10.51.57 AM.png" style="width:50%"></a>
+  					<a target="_blank" href="portfolio/Screen Shot 2017-03-07 at 10.52.19 AM.png"><img class="mySlides" src="portfolio/Screen Shot 2017-03-07 at 10.52.19 AM.png" style="width:50%"></a>
+  					<a target="_blank" href="portfolio/Screen Shot 2017-03-07 at 10.52.57 AM.png"><img class="mySlides" src="portfolio/Screen Shot 2017-03-07 at 10.52.57 AM.png" style="width:50%"></a>
+
+	 				<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  					<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+				</div>
+				<script>
+					var slideIndex = 1;
+					showDivs(slideIndex);
+
+					function plusDivs(n) {
+  					showDivs(slideIndex += n);
+					}
+
+					function showDivs(n) {
+  					var i;
+  					var x = document.getElementsByClassName("mySlides");
+  					if (n > x.length) {slideIndex = 1}    
+  					if (n < 1) {slideIndex = x.length}
+  					for (i = 0; i < x.length; i++) {
+    				x[i].style.display = "none";  
+  					}
+  					x[slideIndex-1].style.display = "block";  
+					}
+				</script>
+			</div>
+			<div class="grid-item">
+				<a target="_blank" href="portfolio/Screen Shot 2016-05-16 at 11.47.56 AM.png">
+  					<img src="portfolio/Screen Shot 2016-05-16 at 11.47.56 AM.png" alt="can of moe">
+				</a>
+			</div>
+			<div class="grid-item">
+				<a target="_blank" href="portfolio/Screen Shot 2016-10-17 at 12.14.15 PM.png">
+  					<img src="portfolio/Screen Shot 2016-10-17 at 12.14.15 PM.png" alt="bust and wizard hat">
+				</a>
+			</div>
 </div>
 
 </div>
 
 <footer>
-	    <div class="social">
+	   <div class="social">
   	    <a href="https://www.facebook.com/GSPAyreezy/" id="firstsocial"><img src="facebook icon.png" alt="Facebook"></a>
   	    <a href="https://gamestationpro.tumblr.com/"><img src="tumblr icon.png" alt="tumblr"></a>
         <a href="https://twitter.com/gamestationpro"><img src="twitter icon.png" alt="twitter"></a>
       </div>
 	    <p> &copy; Aaron Arthur Chin | 2018</p>
-  </footer>
+</footer>
 
 </body>
 </html>

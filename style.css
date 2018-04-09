@@ -100,6 +100,60 @@ ul li {
 		font-size: 20px;
 }
 
+#Pcontent {
+	background-color: #ffa3c8;
+	margin: 0 auto;
+	margin-top: 145px;
+	width: 50%;
+	height: 1000px;
+	padding: 300px;
+	border-style: solid;
+    border-width: 10px;
+    border-color: white;
+    border-bottom: none;
+    border-top: none;
+	font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+#Pcontent h1 {
+	text-align: center;
+	color: white;
+	margin-top: -250px
+
+}
+
+#Pcontent h2 {
+	color: white
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: white;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  }
+
+#Pcontent img {
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    width: 150px; /* Set a small width */
+}
+
+/* Add a hover effect (blue shadow) */
+#Pcontent img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
 footer {
 	margin: 0 auto;
 	background-color: #a0defe;
