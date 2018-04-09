@@ -37,6 +37,11 @@ ul li {
 	z-index: 0
 }
 
+li a:hover {
+    background-color: #7799ff;
+    color: white;
+}
+
 .wrapper {
 	margin: 0 auto;
 	height: 100% auto;
