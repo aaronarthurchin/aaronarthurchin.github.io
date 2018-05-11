@@ -136,6 +136,7 @@ li a:hover {
 }
 
 #Pcontent h2 {
+	margin-left: -125px;
 	color: white
 }
 
@@ -143,6 +144,7 @@ li a:hover {
   display: grid;
   grid-template-columns: auto auto auto;
   margin: 0 auto;
+  margin-left: -125px;
   padding: 10px;
 }
 
