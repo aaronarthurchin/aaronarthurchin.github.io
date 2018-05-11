@@ -105,6 +105,12 @@ li a:hover {
 		font-size: 20px;
 }
 
+#Hcontent img {
+	margin-left: 75px;
+    max-width: 300px; /* Set a small width */
+    max-height: 300px;
+}
+
 #Pcontent {
 	background-color: #ffa3c8;
 	margin: 0 auto;
