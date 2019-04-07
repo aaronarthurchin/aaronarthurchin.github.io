@@ -155,10 +155,42 @@ li a:hover {
   }
 
 #Pcontent img {
-    border: 10px solid white; 
+    border: 10px solid white;
     border-radius: 12px;  /* Rounded border */
     max-width: 300px; /* Set a small width */
     max-height: 300px;
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  color: #000;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  width: 400px;
+  top: 100%;
+  left: 50%;
+  margin-left: -200px; /* Use half of the width (120/2 = 60), to center the tooltip */
+	font-size: 20px;
+
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* Add a hover effect (blue shadow) */
@@ -167,7 +199,7 @@ li a:hover {
 }
 
 #Pcontent iframe {
-	border: 10px solid white; 
+	border: 10px solid white;
     border-radius: 12px;
 }
 
@@ -195,4 +227,4 @@ footer p{
 	padding: 20px 0;
 	color: #fff;
 	font-weight: 700;
-}	
+}
