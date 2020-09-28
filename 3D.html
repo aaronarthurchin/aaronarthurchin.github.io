@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<style>
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4em;
+    padding-bottom: 1680px;
+   
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+    
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+   text-align: center;
+  
+}
+
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+ color: #ffffff;
+  padding: 15px;
+      text-shadow: #D3D3D3;
+    text-align: left;
+  
+}
+    
+      /* unvisited link */
+.header a:link {
+  color: white;
+    text-decoration: none;
+}
+
+/* visited link */
+.header a:visited {
+  color: white;
+    text-decoration: none;
+}
+
+/* mouse over link */
+.header a:hover {
+  color: hotpink;
+    text-decoration: none;
+}
+
+/* selected link */
+.header a:active {
+  color: white;
+    text-decoration: none;
+}
+    
+    #foot_dive img{
+    width: 111%;
+        height: 180px;
+    left: -10%;
+bottom: 0px;
+    z-index: -2; 
+        padding: 0px;
+        position: absolute;
+    }
+    
+    .footer {
+      
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+        font-weight: 800;
+    bottom: 0px;
+    width: 100%;
+    left: 0px;
+   position: sticky;
+        z-index: 0; 
+}
+
+    .footer img{
+    width:84px;
+	height:84px;
+      
+        
+    }
+    .header iframe {
+	width: 100%;
+	position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+    #Pcontent {
+	
+
+	width: 50%;
+	height: auto;
+	padding: 10px;
+        padding-left: 160px;
+
+
+}
+
+#Pcontent h1 {
+	text-align: center;
+	color: white;
+	margin-top: -250px
+
+}
+
+#Pcontent h2 {
+	margin-left: -125px;
+	color: white
+}
+
+.grid-container {
+  display: grid;
+    margin-left: -125px;
+    grid-template-columns: auto auto auto auto auto;
+   
+}
+
+.grid-item {
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  }
+
+#Pcontent img {
+    border: 20px solid black;
+    border-radius: 12px;  /* Rounded border */
+    max-width: 340px; /* Set a small width */
+    max-height:340px;
+}
+
+
+
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 100%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+    
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+        .wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4em;
+    padding-bottom: 280px;
+   
+}
+  [class*="col-"] {
+    width: 100%;
+    text-align: center;
+  }
+            .footer {
+    bottom: -69%;
+    width: 100%;
+    left: 0px;
+    position: sticky;
+}
+
+    .grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  margin-left: -185px;
+ 
+}
+        #Pcontent img {
+    border: 20px solid black;
+    border-radius: 12px;  /* Rounded border */
+    max-width: 450px; /* Set a small width */
+  
+}
+}
+    
+    @media only screen and (min-width: 768px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 100%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+        .grid-container {
+  display: grid;
+    margin-left: -125px;
+
+    grid-template-columns: auto auto;
+}
+        
+}
+ @media only screen and (min-width: 1080px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 100%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+   
+        .grid-container {
+  display: grid;
+    margin-left: -125px;
+
+    grid-template-columns: auto auto auto;
+}
+      }
+                    @media only screen and (min-width: 1620px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 100%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+        .grid-container {
+  display: grid;
+    margin-left: -125px;
+
+    grid-template-columns: auto auto auto auto;
+}        
+}
+                    @media only screen and (min-width: 1820px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 100%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+        .grid-container {
+  display: grid;
+    margin-left: -125px;
+
+    grid-template-columns: auto auto auto auto auto;
+           
+}
+            }
+
+ .collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+            #icon img{
+            height: 100px;
+width: auto;
+    }
+</style>
+</head>
+<body>
+
+ <div class="wrapper">
+    
+<div class="header">
+       <iframe src="https://aaronarthurchin.github.io/index4.html"></iframe>
+  <h1><br><a href="home.html" >Aaron Chin</a> <br></h1>
+</div>
+
+<!--<div class="row">
+  <div class="col-3 menu">
+    <ul>
+    <li>The Flight</li>
+    <li>The City</li>
+    <li>The Island</li>
+    <li>The Food</li>
+    </ul>
+  </div> 
+-->
+
+  <div class="col-6">
+    <h1>3D Models & Sculpture</h1>
+      <div id="icon">
+      <a href="https://aaronarthurchin.github.io/3D.html"><img src="3D%20icon%20i.png" alt="3D Models & Sculpture"></a>
+      </div>
+      
+      <div id="Pcontent">
+      		<div class="grid-container">
+
+
+                <div class="grid-item">
+									
+						<div class="w3-content w3-display-container">
+  					<a target="_blank" href="portfolio/ankylocados.png"><img class="mySlides1" src="portfolio/ankylocados.png"></a>
+  					<a target="_blank" href="portfolio/ank1.jpg"><img class="mySlides1" src="portfolio/ank1.jpg"></a>
+  					<a target="_blank" href="portfolio/ank2.jpg"><img class="mySlides1" src="portfolio/ank2.jpg"></a>
+  					<a target="_blank" href="portfolio/ank3.jpg"><img class="mySlides1" src="portfolio/ank3.jpg"></a>
+
+	 				<button class="w3-button w3-black w3-display-left" onclick="plusDivs1(-1)">&#10094;</button>
+  					<button class="w3-button w3-black w3-display-right" onclick="plusDivs1(1)">&#10095;</button>
+				</div>
+				<script>
+					var slideIndex1 = 1;
+					showDivs1(slideIndex1);
+
+					function plusDivs1(n) {
+  					showDivs1(slideIndex1 += n);
+					}
+
+					function showDivs1(n) {
+  					var i;
+  					var x = document.getElementsByClassName("mySlides1");
+  					if (n > x.length) {slideIndex1 = 1}
+  					if (n < 1) {slideIndex1 = x.length}
+  					for (i = 0; i < x.length; i++) {
+    				x[i].style.display = "none";
+  					}
+  					x[slideIndex1-1].style.display = "block";
+					}
+				</script>
+								
+                                        
+                                      		<button type="button" class="collapsible">	<h3>Ankylocados</h3></button>
+<div class="content">  
+								
+								2019  Concrete Multiple Sculpture, Exhibited in Gallery V, Art Building, Department of Art and Art History, San Jose State University.
+								By combining the avocado with the ankylosaurus the piece highlights the similarities between the two organisms. Ankylosauruses died out due to global warming; today, avocados are currently threatened by drying soil, and wildfires.
+								
+								</div>
+									</div>
+
+			<div class="grid-item">
+				
+			<a target="_blank" href="portfolio/isoboi.png">
+				<img src="portfolio/isoboi.png" alt="plastic crustacean">
+			</a>
+				<button type="button" class="collapsible">	<h3>Eurythenes Plasticus Fossil</h3></button>
+<div class="content">
+						
+			
+3D Printed Object, 2.5x3.5x1 in, pictured is a rendered image of the 3D mesh for print. This piece’s life began while researching articles related to additivism and posthumanism. It is inspired by Eurythenes Plasticus which was a new species of crustacean whose discovery was published the week this piece’s inception. The organism lives in the virgin landscape of the Mariana trench thought to be untouched by humanity. Unfortunately however this animal’s name is derived from the type of microplastic pollution found throughout its body. Plastic is a poison created by man that will remain on earth long after our departure. The bodies of future organisms will continue to contain plastic and it will be left behind in their fossilized corpses. The file to print this piece will be distributed online for free. My wish is for as many prints of this to be made for future paleontologists to find. It will be the new method of "set in stone" documentation, used to date future fossils and rock layers to mark the Anthropocene.
+<a href="portfolio/Eurythenes_plasticus_print.obj">Download OBJ</a>
+	
+			</div>
+			</div>
+                
+                
+                
+                
+                
+                                  <div class="grid-item">
+									
+						<div class="w3-content w3-display-container">
+  					<a target="_blank" href="portfolio/hal1.jpg"><img class="mySlides2" src="portfolio/hal1.jpg"></a>
+  					<a target="_blank" href="portfolio/hal2.jpg"><img class="mySlides2" src="portfolio/hal2.jpg"></a>
+  					<a target="_blank" href="portfolio/hal3.jpg"><img class="mySlides2" src="portfolio/hal3.jpg"></a>
+  					<a target="_blank" href="portfolio/hal4.jpg"><img class="mySlides2" src="portfolio/hal4.jpg"></a>
+                    <a target="_blank" href="portfolio/hal5.jpg"><img class="mySlides2" src="portfolio/hal5.jpg"></a>
+                    <a target="_blank" href="portfolio/hal6.jpg"><img class="mySlides2" src="portfolio/hal6.jpg"></a>
+
+	 				<button class="w3-button w3-black w3-display-left" onclick="plusDivs2(-1)">&#10094;</button>
+  					<button class="w3-button w3-black w3-display-right" onclick="plusDivs2(1)">&#10095;</button>
+				</div>
+				<script>
+					var slideIndex2 = 1;
+					showDivs2(slideIndex2);
+
+					function plusDivs2(n) {
+  					showDivs2(slideIndex2 += n);
+					}
+
+					function showDivs2(n) {
+  					var i;
+  					var x = document.getElementsByClassName("mySlides2");
+  					if (n > x.length) {slideIndex2 = 1}
+  					if (n < 1) {slideIndex2 = x.length}
+  					for (i = 0; i < x.length; i++) {
+    				x[i].style.display = "none";
+  					}
+  					x[slideIndex2-1].style.display = "block";
+					}
+				</script>
+								
+                                        
+                                      		<button type="button" class="collapsible">	<h3>Flashback Madness</h3></button>
+<div class="content">  
+								
+								2020 Taffy Sculpture, 3x9.5x5 in
+								A taffy reconstruction of the extinct prehistoric animal Hallucigenia. Salt water taffy was chosen for this sculptures construction to match how the animal lived in the ocean,and was a soft bodied organism. On theme with the animal being extinct the taffy sourced was expired and headed for landfill before recovery. It was also chosen for its vibrant colors and ability to melt to immitate the affects of a good and bad trip on hallucinegenic drugs which the animal was named after. The pictures show the two forms fun and living vs horrific and decaying. The name of the piece is in reference to the long lasting affects of hallucinegens on the body and how trips can trigger flashbacks. The name also references keyword abilities in the card game Magic the Gathering, meaning to use from the graveyard. 
+								</div>
+									</div>
+                
+                
+                
+                
+                
+                
+                <div class="grid-item">
+										
+										<a target="_blank" href="portfolio/yoshi.png">
+											<img src="portfolio/yoshi.png" alt="yoshi">
+									</a>
+									
+                    <button type="button" class="collapsible">	<h3>Cuddle with Coils</h3></button>
+<div class="content">
+                    
+									
+2019.  Steel wire Sculpture,  Exhibited in SJSU display case #D3 Art Building, Department of Art and Art History, San Jose State University.
+This piece is a reinterpretation of a stuffed toy in steel wire. The wire industrial wire juxtaposes its form and conveys wanting what you can't have.
+										
+									</div>
+										</div>
+                
+                
+			<div class="grid-item">
+				
+			<a target="_blank" href="portfolio/can.png">
+				<img src="portfolio/can.png" alt="can of moe">
+			</a>
+				<button type="button" class="collapsible">	<h3>Can Of Moe</h3></button>
+<div class="content">
+		
+I turned a simple cylinder into a complex can. This was an exercize in planar mapping for texture,bump, and specular. The goal was to create and market a fictional brand/product inspired by 2000's era anime. It was also an exercize in lighting and rendering in Maya's classic redering engine.
+			
+			</div>
+			</div>
+
+	
+                
+                
+<div class="grid-item">
+						
+				<div class="w3-content w3-display-container">
+  					<a target="_blank" href="portfolio/Screen Shot 2017-03-07 at 10.51.19 AM.png"><img class="mySlides" src="portfolio/Screen Shot 2017-03-07 at 10.51.19 AM.png"></a>
+  					<a target="_blank" href="portfolio/Screen Shot 2017-03-07 at 10.51.57 AM.png"><img class="mySlides" src="portfolio/Screen Shot 2017-03-07 at 10.51.57 AM.png"></a>
+  					<a target="_blank" href="portfolio/Screen Shot 2017-03-07 at 10.52.19 AM.png"><img class="mySlides" src="portfolio/Screen Shot 2017-03-07 at 10.52.19 AM.png"></a>
+  					<a target="_blank" href="portfolio/Screen Shot 2017-03-07 at 10.52.57 AM.png"><img class="mySlides" src="portfolio/Screen Shot 2017-03-07 at 10.52.57 AM.png"></a>
+
+	 				<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  					<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+				</div>
+				<script>
+					var slideIndex = 1;
+					showDivs(slideIndex);
+
+					function plusDivs(n) {
+  					showDivs(slideIndex += n);
+					}
+
+					function showDivs(n) {
+  					var i;
+  					var x = document.getElementsByClassName("mySlides");
+  					if (n > x.length) {slideIndex = 1}
+  					if (n < 1) {slideIndex = x.length}
+  					for (i = 0; i < x.length; i++) {
+    				x[i].style.display = "none";
+  					}
+  					x[slideIndex-1].style.display = "block";
+					}
+				</script>
+				<button type="button" class="collapsible">	<h3>Personalized Madcatz TE2+</h3></button>
+<div class="content">
+				
+				With this I wanted to recreate a complex object that I’m familiar with in Maya. It is a Madcatz TE2+ that is personalized for when I participate in game tournaments. I use the fight stick very often so I wanted to map it out with my hands. I wanted to make use of specular and bump maps to detail the texture of the different plastics and acrylics of the product.
+				
+				</div>
+		
+              
+          
+   <p>     
+<br> <br> <br><br><br><br>		</p>
+  </div>
+   
+
+  <!--<div class="col-3 right">
+    <div class="aside">
+      <h2>What?</h2>
+      <p>Chania is a city on the island of Crete.</p>
+      <h2>Where?</h2>
+      <p>Crete is a Greek island in the Mediterranean Sea.</p>
+      <h2>How?</h2>
+      <p>You can reach Chania airport from all over Europe.</p>
+    </div>
+  </div>
+</div>-->
+ </div>
+      </div>
+      </div>
+     </div>
+<div class="footer">
+   
+     <p><a href="https://aaronarthurchin.github.io/2D.html"><img src="2D%20icon.png" alt="Photo & Illustrations"></a>
+  	 <a href="https://aaronarthurchin.github.io/3D.html"><img src="3D%20icon%20copy.png" alt="3D Models & Sculpture"></a>
+        <a href="https://aaronarthurchin.github.io/ArtistStatement.html"><img src="artist%20icon.png" alt="Artist Statement"></a>
+       <a href="https://aaronarthurchin.github.io/Video.html"><img src="video%20icon.png" alt="Animation & Video"></a>
+  	    <a href="https://aaronarthurchin.github.io/NetArt.html"><img src="web%20icon.png" alt="Net Art"></a><br>
+  © Aaron Arthur Chin | 2020</p>
+    <div id="foot_dive">
+        
+    <img src="aesthetic%20pattern%20copy.png">
+        </div>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+     
+</body>
+</html>

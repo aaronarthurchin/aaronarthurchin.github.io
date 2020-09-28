@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<style>
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4em;
+    padding-bottom: 1080px;
+   
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+    
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+   text-align: center;
+  
+}
+
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+ color: #ffffff;
+  padding: 15px;
+      text-shadow: #D3D3D3;
+    text-align: left;
+  
+}
+    
+      /* unvisited link */
+.header a:link {
+  color: white;
+    text-decoration: none;
+}
+
+/* visited link */
+.header a:visited {
+  color: white;
+    text-decoration: none;
+}
+
+/* mouse over link */
+.header a:hover {
+  color: hotpink;
+    text-decoration: none;
+}
+
+/* selected link */
+.header a:active {
+  color: white;
+    text-decoration: none;
+}
+    
+    #foot_dive img{
+    width: 110.6%;
+        height: 180px;
+    left: -10%;
+bottom: 0px;
+    z-index: -2; 
+        padding: 0px;
+        position: absolute;
+    }
+    
+    .footer {
+      
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+        font-weight: 800;
+    bottom: 0px;
+    width: 100%;
+    left: 0px;
+   position: sticky;
+   z-index: 0;
+}
+
+    .footer img{
+    width:90px;
+	height:90px;
+       z-index: 2;
+        
+    }
+    .header iframe {
+	width: 100%;
+	position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+    #Pcontent {
+	
+
+	width: 50%;
+	height: auto;
+	padding: 100px;
+
+
+}
+
+#Pcontent h1 {
+	text-align: center;
+	color: white;
+	margin-top: -250px
+
+}
+
+#Pcontent h2 {
+	margin-left: -125px;
+	color: white
+}
+
+.grid-container {
+  display: grid;
+    margin-left: -125px;
+    grid-template-columns: auto auto auto auto auto;
+    
+}
+
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  }
+
+
+#Pcontent img {
+    border: 10px solid black;
+    border-radius: 12px;  /* Rounded border */
+    max-width: 340px; /* Set a small width */
+    max-height:auto;
+}
+
+
+
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 100%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+    
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+    .wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4em;
+    padding-bottom: 2080px;
+   
+}
+  [class*="col-"] {
+    width: 100%;
+    text-align: center;
+  }
+            .footer {
+    bottom: -69%;
+    width: 100%;
+    left: 0px;
+    position: sticky;
+                  z-index: 0;
+}
+
+    .grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  margin-left: -125px;
+ 
+}
+        #Pcontent img {
+    border: 10px solid black;
+    border-radius: 12px;  /* Rounded border */
+    max-width: 450px; /* Set a small width */
+    max-height: auto;
+}
+}
+    
+    @media only screen and (min-width: 768px) {
+  /* For tablets: */  
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 100%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+        .grid-container {
+  display: grid;
+    margin-left: -125px;
+
+    grid-template-columns: auto auto;
+}
+        
+}
+        @media only screen and (min-width: 1080px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 100%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+        .grid-container {
+  display: grid;
+    margin-left: -125px;
+
+    grid-template-columns: auto auto auto;
+}
+                    @media only screen and (min-width: 1620px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 100%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+        .grid-container {
+  display: grid;
+    margin-left: -125px;
+
+    grid-template-columns: auto auto auto auto;
+}        
+}
+                    @media only screen and (min-width: 1820px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 100%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+        .grid-container {
+  display: grid;
+    margin-left: -125px;
+
+    grid-template-columns: auto auto auto auto auto;
+}
+</style>
+</head>
+<body>
+
+ <div class="wrapper">
+    
+<div class="header">
+       <iframe src="https://aaronarthurchin.github.io/index4.html"></iframe>
+  <h1><br><a href="home.html" >Aaron Chin</a> <br></h1>
+</div>
+
+<!--<div class="row">
+  <div class="col-3 menu">
+    <ul>
+    <li>The Flight</li>
+    <li>The City</li>
+    <li>The Island</li>
+    <li>The Food</li>
+    </ul>
+  </div> 
+-->
+
+  <div class="col-6">
+    <h1>Portfolio</h1>
+      <div id="Pcontent">
+      		<div class="grid-container">
+
+  				<div class="grid-item">
+				<a href="https://aaronarthurchin.github.io/2D.html"><img src="photoxillusthumbnail.png" alt="Photo & Illustrations"></a>
+			</div>
+  					
+  				<div class="grid-item">
+						 <a href="https://aaronarthurchin.github.io/3D.html"><img src="3dmosculp.png" alt="3D Models & Sculpture"></a>
+			</div>
+  				
+						<div class="grid-item">
+							<a href="https://aaronarthurchin.github.io/ArtistStatement.html"><img src="atstatethumbnail.png" alt="Artist Statement"></a>
+							</div>
+
+							<div class="grid-item">
+								<a href="https://aaronarthurchin.github.io/Video.html"><img src="AnimxVidthumbnail.png" alt="Animation & Video"></a>
+								</div>
+                <div class="grid-item">
+								 <a href="https://aaronarthurchin.github.io/NetArt.html"><img src="Net_art_thumbnail.png" alt="Net Art"></a>
+								</div>
+
+					
+                </div>
+          </div>
+   <p>     
+<br> <br> <br><br><br><br>		</p>
+  </div>
+
+  <!--<div class="col-3 right">
+    <div class="aside">
+      <h2>What?</h2>
+      <p>Chania is a city on the island of Crete.</p>
+      <h2>Where?</h2>
+      <p>Crete is a Greek island in the Mediterranean Sea.</p>
+      <h2>How?</h2>
+      <p>You can reach Chania airport from all over Europe.</p>
+    </div>
+  </div>
+</div>-->
+</div>
+<div class="footer">
+   
+     <p><a href="https://aaronarthurchin.github.io/2D.html"><img src="2D%20icon.png" alt="Photo & Illustrations"></a>
+  	 <a href="https://aaronarthurchin.github.io/3D.html"><img src="3D%20icon%20copy.png" alt="3D Models & Sculpture"></a>
+        <a href="https://aaronarthurchin.github.io/ArtistStatement.html"><img src="artist%20icon.png" alt="Artist Statement"></a>
+       <a href="https://aaronarthurchin.github.io/Video.html"><img src="video%20icon.png" alt="Animation & Video"></a>
+  	    <a href="https://aaronarthurchin.github.io/NetArt.html"><img src="web%20icon.png" alt="Net Art"></a><br>
+  © Aaron Arthur Chin | 2020</p>
+    <div id="foot_dive">
+        
+    <img src="aesthetic%20pattern%20copy.png">
+        </div>
+</div>
+
+</body>
+</html>

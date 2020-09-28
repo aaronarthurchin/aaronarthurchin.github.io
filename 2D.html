@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<style>
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4em;
+    padding-bottom: 1080px;
+   
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+    
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+   text-align: center;
+  
+}
+
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+ color: #ffffff;
+  padding: 15px;
+      text-shadow: #D3D3D3;
+    text-align: left;
+  
+}
+    
+      /* unvisited link */
+.header a:link {
+  color: white;
+    text-decoration: none;
+}
+
+/* visited link */
+.header a:visited {
+  color: white;
+    text-decoration: none;
+}
+
+/* mouse over link */
+.header a:hover {
+  color: hotpink;
+    text-decoration: none;
+}
+
+/* selected link */
+.header a:active {
+  color: white;
+    text-decoration: none;
+}
+    
+    #foot_dive img{
+    width: 111%;
+        height: 180px;
+    left: -10%;
+bottom: 0px;
+    z-index: -2; 
+        padding: 0px;
+        position: absolute;
+    }
+    
+    .footer {
+      
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+        font-weight: 800;
+    bottom: 0px;
+    width: 100%;
+    left: 0px;
+   position: sticky;
+        z-index: 0; 
+}
+
+    .footer img{
+    width:84px;
+	height:84px;
+      
+        
+    }
+    .header iframe {
+	width: 100%;
+	position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+    #Pcontent {
+	
+
+	width: 50%;
+	height: auto;
+	padding: 10px;
+        padding-left: 160px;
+
+
+}
+
+#Pcontent h1 {
+	text-align: center;
+	color: white;
+	margin-top: -250px
+
+}
+
+#Pcontent h2 {
+	margin-left: -125px;
+	color: white
+}
+
+.grid-container {
+  display: grid;
+    margin-left: -125px;
+    grid-template-columns: auto auto auto auto auto;
+   
+}
+
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  }
+
+#Pcontent img {
+    border: 20px solid black;
+    border-radius: 12px;  /* Rounded border */
+    max-width: 340px; /* Set a small width */
+    max-height:340px;
+}
+
+
+
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 100%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+    
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+        .wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4em;
+    padding-bottom: 2080px;
+   
+}
+  [class*="col-"] {
+    width: 100%;
+    text-align: center;
+  }
+            .footer {
+    bottom: -69%;
+    width: 100%;
+    left: 0px;
+    position: sticky;
+}
+
+    .grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  margin-left: -185px;
+ 
+}
+        #Pcontent img {
+    border: 20px solid black;
+    border-radius: 12px;  /* Rounded border */
+    max-width: 450px; /* Set a small width */
+  
+}
+}
+    
+    @media only screen and (min-width: 768px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 100%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+        .grid-container {
+  display: grid;
+    margin-left: -125px;
+
+    grid-template-columns: auto auto;
+}
+        
+}
+ @media only screen and (min-width: 1080px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 100%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+   
+        .grid-container {
+  display: grid;
+    margin-left: -125px;
+
+    grid-template-columns: auto auto auto;
+}
+      }
+                    @media only screen and (min-width: 1620px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 100%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+        .grid-container {
+  display: grid;
+    margin-left: -125px;
+
+    grid-template-columns: auto auto auto auto;
+}        
+}
+                    @media only screen and (min-width: 1820px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 100%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+        .grid-container {
+  display: grid;
+    margin-left: -125px;
+
+    grid-template-columns: auto auto auto auto auto;
+           
+}
+            }
+
+ .collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+            #icon img{
+            height: 100px;
+width: auto;
+    }
+</style>
+</head>
+<body>
+
+ <div class="wrapper">
+    
+<div class="header">
+       <iframe src="https://aaronarthurchin.github.io/index4.html"></iframe>
+  <h1><br><a href="home.html" >Aaron Chin</a> <br></h1>
+</div>
+
+<!--<div class="row">
+  <div class="col-3 menu">
+    <ul>
+    <li>The Flight</li>
+    <li>The City</li>
+    <li>The Island</li>
+    <li>The Food</li>
+    </ul>
+  </div> 
+-->
+
+  <div class="col-6">
+    <h1>Photo & Illustration Work</h1>
+      <div id="icon">
+      <a href="https://aaronarthurchin.github.io/2D.html"><img src="2D%20icon%20i.png" alt="Photo & Illustrations"></a>
+      </div>
+      
+      <div id="Pcontent">
+      		<div class="grid-container">
+
+  				<div class="grid-item">
+						
+  					<a target="_blank" href="portfolio/reflection.png">
+  						<img src="portfolio/thumbnail 2.jpg" alt="Lenception">
+					</a>
+                        <button type="button" class="collapsible"><h3>Lenception</h3></button>
+					<div class="content">
+					<p>The intent was to play with the idea of seeing the artist in their work. The subject of the photograph is someone photographing me. In the reflection of their lens I can be seen taking the photograph that became the piece.</p>
+					</div>
+                 
+		
+  					</div>
+  				<div class="grid-item">
+						
+  					<a target="_blank" href="portfolio/photo narrative.jpg">
+  						<img src="portfolio/photo narrative.jpg" alt="Toby">
+					</a>
+                    <button type="button" class="collapsible"><h3>Toby</h3></button>
+<div class="content">
+					
+					A collection of three pictures that tell the story of a dog waking up and suddenly being alone. I arranged the images into panels with a manga influence. My goal was to take advantage of the way we anthropomorphize animals. I left all of the bubbles blank because we project thoughts and feelings onto animals, when we interpret their actions. Similar to Jim Davis’ Garfield, I used thought bubbles because we can't actually understand animals. All of Garfield's dialogue are actually the thoughts of John. I left the bubbles blank so the audience can apply their own thoughts.
+					</div>
+			</div>
+  				
+						<div class="grid-item">
+							
+							<a target="_blank" href="portfolio/cabbage.png">
+								<img src="portfolio/cabbage.png" alt="cabbage">
+						</a>
+						<button type="button" class="collapsible"><h3>20 Shades of Cabbage</h3></button>
+<div class="content">
+						
+						2018, Acrylic on Bristol board, 12”12”in
+						</span>
+					</div>
+							</div>
+
+							<div class="grid-item">
+							
+								<a target="_blank" href="portfolio/answer.png">
+									<img src="portfolio/answer.png" alt="Transparent Answer">
+							</a>
+							
+                                <button type="button" class="collapsible"><h3>Transparent Answer</h3></button>
+<div class="content">
+							
+							2018, Charcoal drawing, 18”x20”in
+						
+							</div>
+                                </div>
+                
+								<div class="grid-item">
+									<div class="tooltip">
+								<a target="_blank" href="portfolio/Avatars of Adventure.jpg">
+									<img src="portfolio/Avatars of Adventure.jpg" alt="Avatars of Adventure">
+							</a>
+							<button type="button" class="collapsible"><h3>Avatars of Adventure</h3></button>
+<div class="content">
+							
+							This is a digital painting of three of my original characters that I played as over three different Dungeons and Dragons campaigns. My goal was to add dimension and flow to my characters’ poses. I was influenced by the process of artist Hirohiko Araki who draws his characters with poses based on Greek/Roman sculpture.
+						
+					</div>
+							</div>
+                                    </div>
+                		<div class="grid-item">
+											
+											<a target="_blank" href="portfolio/MEGU WAVE copy_waifu2x_art_noise3_scale_tta_1.png">
+												<img src="portfolio/thumbnail 4.jpg" alt="MEGU WAVE">
+										</a>
+										<button type="button" class="collapsible"><h3>MEGU WAVE</h3></button>
+<div class="content">
+										
+2017 Wallpaper project
+											
+										</div>
+											</div>
+<div class="grid-item">
+								
+								<a target="_blank" href="portfolio/Dec 2018 banner copy.png">
+									<img src="portfolio/Dec 2018 banner copy.png" alt="Daily Hell Dec 2018 banner">
+							</a>
+							<button type="button" class="collapsible">	<h3>Daily Hell 2018 Banner</h3></button>
+<div class="content">
+						
+							This piece was meant to be a banner for a Facebook group I created during my first semester at SJSU. The group revolves around a type of post called a "daily", you choose a subject that makes you happy and post it every day, with a summary of how your day went. The group became a platform for my art. Every month I make collages based on 5 subjects the community votes for, and dedicate them to one member. This banner incorporates elements of glitch art. Using audacity I embedded audio of the chosen member singing into the image. A general theme of the banners is compositing member avatars on to images from real life. It’s meant to signify how the online friendships made in the group are just as valid as real ones.
+							</span>
+					</div>
+              
+          
+   <p>     
+<br> <br> <br><br><br><br>		</p>
+  </div>
+   
+
+  <!--<div class="col-3 right">
+    <div class="aside">
+      <h2>What?</h2>
+      <p>Chania is a city on the island of Crete.</p>
+      <h2>Where?</h2>
+      <p>Crete is a Greek island in the Mediterranean Sea.</p>
+      <h2>How?</h2>
+      <p>You can reach Chania airport from all over Europe.</p>
+    </div>
+  </div>
+</div>-->
+ </div>
+      </div>
+<div class="footer">
+   
+     <p><a href="https://aaronarthurchin.github.io/2D.html"><img src="2D%20icon.png" alt="Photo & Illustrations"></a>
+  	 <a href="https://aaronarthurchin.github.io/3D.html"><img src="3D%20icon%20copy.png" alt="3D Models & Sculpture"></a>
+        <a href="https://aaronarthurchin.github.io/ArtistStatement.html"><img src="artist%20icon.png" alt="Artist Statement"></a>
+       <a href="https://aaronarthurchin.github.io/Video.html"><img src="video%20icon.png" alt="Animation & Video"></a>
+  	    <a href="https://aaronarthurchin.github.io/NetArt.html"><img src="web%20icon.png" alt="Net Art"></a><br>
+  © Aaron Arthur Chin | 2020</p>
+    <div id="foot_dive">
+        
+    <img src="aesthetic%20pattern%20copy.png">
+        </div>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+     
+</body>
+</html>
