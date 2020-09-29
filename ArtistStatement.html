@@ -6,7 +6,14 @@
 * {
   box-sizing: border-box;
 }
-
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4em;
+    padding-bottom: 1680px;
+   
+}
 .row::after {
   content: "";
   clear: both;
@@ -59,14 +66,20 @@ html {
 }
     
     #foot_dive img{
-    width: 100%;
+    width: 110.7%;
         height: 180px;
-    left: 0px;
+    left: -10%;
 bottom: 0px;
-    z-index: -1; 
+    z-index: -2; 
         padding: 0px;
         position: absolute;
     }
+    
+        #icon img{
+            height: 100px;
+width: auto;
+    }
+    
     
     .footer {
       
@@ -78,11 +91,12 @@ bottom: 0px;
     width: 100%;
     left: 0px;
    position: sticky;
+        z-index: 0; 
 }
 
     .footer img{
-    width:90px;
-	height:90px;
+    width:84px;
+	height:84px;
       
         
     }
@@ -93,6 +107,54 @@ bottom: 0px;
     top: 0px;
     z-index: -1;
 }
+    #Pcontent {
+	
+
+	width: 50%;
+	height: auto;
+	padding: 10px;
+         padding-left: 200px;
+
+
+}
+
+#Pcontent h1 {
+	text-align: center;
+	color: white;
+	margin-top: -250px
+
+}
+
+#Pcontent h2 {
+	margin-left: -125px;
+	color: white
+}
+
+.grid-container {
+  display: grid;
+    margin-left: -125px;
+    grid-template-columns: auto auto auto auto auto;
+   
+}
+
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  }
+
+#Pcontent img {
+    border: 20px solid black;
+    border-radius: 12px;  /* Rounded border */
+    max-width: 340px; /* Set a small width */
+    max-height:340px;
+}
+
+#Pcontent iframe {
+	border: 10px solid black;
+    border-radius: 12px;
+}
+
 
 /* For desktop: */
 .col-1 {width: 8.33%;}
@@ -112,6 +174,14 @@ bottom: 0px;
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
+        .wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4em;
+    padding-bottom: 2080px;
+   
+}
   [class*="col-"] {
     width: 100%;
     text-align: center;
@@ -122,12 +192,138 @@ bottom: 0px;
     left: 0px;
     position: sticky;
 }
+
+    .grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  margin-left: -125px;
+ 
+}
+        #Pcontent img {
+    border: 20px solid black;
+    border-radius: 12px;  /* Rounded border */
+    max-width: 450px; /* Set a small width */
+  
+}
+}
+    
+    @media only screen and (min-width: 768px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 100%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+        .grid-container {
+  display: grid;
+    margin-left: -125px;
+
+    grid-template-columns: auto auto;
+}
+        
+}
+ @media only screen and (min-width: 1080px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 100%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+   
+        .grid-container {
+  display: grid;
+    margin-left: -125px;
+
+    grid-template-columns: auto auto auto;
+}
+      }
+                    @media only screen and (min-width: 1620px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 100%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+        .grid-container {
+  display: grid;
+    margin-left: -125px;
+
+    grid-template-columns: auto auto auto auto;
+}        
+}
+                    @media only screen and (min-width: 1820px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 100%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+        .grid-container {
+  display: grid;
+    margin-left: -125px;
+
+    grid-template-columns: auto auto auto auto auto;
+           
+}
+            }
+
+ .collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
 }
 </style>
 </head>
+    
+    
 <body>
 
- 
+  <div class="wrapper">
     
 <div class="header">
        <iframe src="https://aaronarthurchin.github.io/index4.html"></iframe>
@@ -146,7 +342,10 @@ bottom: 0px;
 -->
 
   <div class="col-6">
-    <h1>Artist Statement</h1>
+   <div id="icon">
+              <h1>Artist Statement</h1> 
+      <a href="https://aaronarthurchin.github.io/ArtistStatement.html"><img src="artist%20icon_i.png" alt="Artist Statement"></a>
+      </div>
    <p>
 				<a href="resume2020.pdf" >Link to CV/Resume</a> <br>
                 <a href="CoverLetter2020.pdf" >Link to Cover letter</a> <br>
@@ -182,6 +381,8 @@ bottom: 0px;
   </div>
 </div>-->
 
+       </div>
+      
 <div class="footer">
    
      <p><a href="https://aaronarthurchin.github.io/2D.html"><img src="2D%20icon.png" alt="Photo & Illustrations"></a>
