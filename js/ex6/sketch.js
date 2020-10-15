@@ -62,7 +62,10 @@ txt();
   if (tCounter > width) {
     tCounter = -50;
   }
+  if (!mouseIsPressed) {
+    fill(255);
 
+  }
 
 }
 function txt(){
